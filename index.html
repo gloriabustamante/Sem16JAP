@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloria Bustamante Semana 16-JAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="img/1f12f0f6-7b9e-47fc-ac9a-32f8e73b6fe3._CR0,0,970,300_PT0_SX970__.jpg" alt="">
-    <h1>Busca tu Personaje favorito</h1>
-    <input type="text" id="characterName" placeholder="Nombre del personaje">
-    <button onclick="searchCharacter()">Buscar</button>
 
-<div id="character-card">
-    <img id="character-image" src="" alt="Imagen del Personaje">
-    <div class="info">
-    <h2 id="character-name"></h2>
-    <p><strong>Estado:</strong> <span id="character-status"></span></p>
-    <p><strong>Especie:</strong> <span id="character-species"></span></p>
-    <p><strong>Género:</strong> <span id="character-gender"></span></p>
+<div class="container text-center my-4">
+    <img src="img/1f12f0f6-7b9e-47fc-ac9a-32f8e73b6fe3._CR0,0,970,300_PT0_SX970__.jpg" alt="Banner" class="banner img-fluid rounded">
+
+    <h1 class="mb-4">Busca tu Personaje Favorito</h1>
+
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input type="text" id="characterName" class="form-control" placeholder="Nombre del personaje">
+        <button class="btn btn-primary" onclick="searchCharacter()">Buscar</button>
+    </div>
+
+    <div id="character-card" class="card mx-auto shadow-sm">
+        <img id="character-image" src="" class="card-img-top" alt="Imagen del Personaje">
+        <div class="card-body">
+            <h2 id="character-name" class="card-title"></h2>
+            <p class="card-text"><strong>Estado:</strong> <span id="character-status"></span></p>
+            <p class="card-text"><strong>Especie:</strong> <span id="character-species"></span></p>
+            <p class="card-text"><strong>Género:</strong> <span id="character-gender"></span></p>
+        </div>
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
 </body>
