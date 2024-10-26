@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+}
+
+h1 {
+    color: #82a1b1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 2px 2px;
+    margin-top: 0px;
+}
+
+img {
+    width: 50%;
+}
+
+#character-card {
+    display: none; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#character-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.info {
+    text-align: left;
+    margin-top: 15px;
+}
