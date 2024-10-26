@@ -18,25 +18,29 @@ function searchCharacter() {
         .then(data => {
             if (data.results && data.results.length > 0) {
                 const character = data.results[0]; 
-                
                 document.getElementById('character-image').src = character.image;
                 document.getElementById('character-id').textContent = character.id;
                 document.getElementById('character-name').textContent = character.name;
                 document.getElementById('character-status').textContent = character.status;
                 document.getElementById('character-species').textContent = character.species;
                 document.getElementById('character-origin').textContent = character.origin.name;
+                document.getElementById('character-location').textContent = character.location.name;
                 document.getElementById('character-gender').textContent = character.gender;
+                document.getElementById('character-episodes').textContent = character.episode.length;
+                document.getElementById('character-created').textContent = new Date(character.created).toLocaleDateString();
                 document.getElementById('character-card').style.display = 'block';
             } else if (data.id) {
                 const character = data; 
-
                 document.getElementById('character-image').src = character.image;
                 document.getElementById('character-id').textContent = character.id;
                 document.getElementById('character-name').textContent = character.name;
                 document.getElementById('character-status').textContent = character.status;
                 document.getElementById('character-species').textContent = character.species;
                 document.getElementById('character-origin').textContent = character.origin.name;
+                document.getElementById('character-location').textContent = character.location.name;
                 document.getElementById('character-gender').textContent = character.gender;
+                document.getElementById('character-episodes').textContent = character.episode.length;
+                document.getElementById('character-created').textContent = new Date(character.created).toLocaleDateString();
                 document.getElementById('character-card').style.display = 'block';
             } else {
                 throw new Error('Personaje no encontrado');
